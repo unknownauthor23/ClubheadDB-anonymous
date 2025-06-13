@@ -11,8 +11,8 @@ This repository contains the **ClubheadDB** dataset, introduced in our paper:
 ClubheadDB is a video frame dataset designed to facilitate the training and evaluation of object detection models for a specific, challenging task: locating the golf clubhead from a down-the-line (DTL) camera view throughout the entire swing.
 
 ### Key Statistics
-* **Total Frames:** ~5,000
-* **Source Videos:** 50
+* **Total Frames:** ~5,029
+* **Source Videos:** 44
 * **Perspective:** Down-the-Line (DTL)
 * **Annotations:** Manually annotated bounding boxes for a single class: `clubhead`.
 * **Format:** YOLO TXT (class_id x_center y_center width height), normalized.
