@@ -11,8 +11,7 @@
 
 A public dataset of down-the-line golf swings with **bounding box annotations** for tracking the clubhead.
 
-![Hero Image/GIF showing bounding box tracking](https://via.placeholder.com/800x400.png?text=Show+a+GIF+of+a+bounding+box+tracking+the+clubhead!)
-*Example of the clubhead tracking possible by training a model on the ClubheadDB dataset.*
+![Alt text for the image](banner.gif)*Example of the clubhead tracking possible by training a model on the ClubheadDB dataset.*
 
 ---
 
