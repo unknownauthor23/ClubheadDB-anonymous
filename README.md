@@ -1,4 +1,4 @@
-# ClubheadDB: A Fine-Grained Dataset for Golf Swing Analysis
+# ClubheadDB: A Dataset for Down-the-Line (DTL) Golf Swingplane Analysis
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License](https://img.shields.io/badge/Dataset-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
