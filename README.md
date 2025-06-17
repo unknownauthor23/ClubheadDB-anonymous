@@ -1,18 +1,18 @@
-# ClubheadDB - A Dataset for Golf Clubhead Detection
+# ClubheadDB: A Dataset for Golf Clubhead Tracking
 
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![License](https://img.shields.io/badge/Dataset-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 [![Paper](http://img.shields.io/badge/paper-ICCVW'25-B31B1B.svg)](https://sauafg-workshop.github.io/)
 
 [Dataset Details](#clubheaddb-at-a-glance) •
+[Annotation Format](#annotation-format) •
 [Getting the Data](#getting-the-data) •
-[Example Use Case](#example-use-case) •
 [Citation](#citation)
 
-A public dataset for the fine-grained analysis of golf swings, featuring expert-labeled swing plane classifications.
+A public dataset of down-the-line golf swings with **bounding box annotations** for tracking the clubhead.
 
-![Hero Image/GIF of the system in action](https://via.placeholder.com/800x400.png?text=Show+a+GIF+of+swing+plane+analysis!)
-*An example of swing plane classification and feedback that can be developed using ClubheadDB.*
+![Hero Image/GIF showing bounding box tracking](https://via.placeholder.com/800x400.png?text=Show+a+GIF+of+a+bounding+box+tracking+the+clubhead!)
+*Example of the clubhead tracking possible by training a model on the ClubheadDB dataset.*
 
 ---
 
@@ -20,23 +20,26 @@ A public dataset for the fine-grained analysis of golf swings, featuring expert-
 
 | Feature | Description |
 | :--- | :--- |
-| **Content** | 100+ video clips of golf swings from a frontal view. |
-| **Sources** | Public videos from YouTube and Reddit. |
-| **Expert Labels** | Each swing is classified by an expert as `On Plane`, `Over the Top`, or `Underneath`. |
-| **Annotations** | Frame-level clubhead coordinates (work in progress). |
-| **Goal** | Facilitate research in Action Quality Assessment (AQA) and human feedback systems. |
+| **Content** | 100+ video clips of golf swings from a down-the-line view. |
+| **Annotations** | **Bounding Boxes (x, y, w, h)** for the golf clubhead in each frame. |
+| **Goal** | To provide training data for object detection models (e.g., YOLO) to robustly track a golf clubhead. |
 
-### Swing Plane Labels
 
-The core contribution of **ClubheadDB** is the expert classification of each swing's plane, a key aspect of golf performance.
+## Annotation Format
 
-* ✅ **On Plane:** The desired, efficient swing path.
-* ❌ **Over the Top:** A common fault where the club approaches the ball from outside the target line.
-* ❌ **Underneath:** A less common fault where the club approaches from too far inside the target line.
+The bounding box annotations are provided in `data/annotations.csv`. The format is as follows:
+
+| video_id | frame | x_min | y_min | x_max | y_max |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| video_001 | 0 | 642 | 480 | 660 | 498 |
+| video_001 | 1 | 645 | 482 | 663 | 500 |
+| ... | ... | ... | ... | ... | ... |
+
+***Note to you:*** *Please verify this format matches your actual annotations file and update the description if needed.*
 
 ## Getting the Data
 
-This repository provides scripts to download the videos and corresponding labels.
+This repository contains the video metadata and bounding box annotations.
 
 **1. Prerequisites**
 * Python 3.9+
@@ -60,11 +63,15 @@ pip install -r requirements.txt
 python src/download_and_process.py
 ```
 * The video clips will be saved in the `videos/` directory.
-* The expert labels are available in `data/labels.csv`.
+* The bounding box annotations are available in `data/annotations.csv`.
 
 ## Example Use Case
 
-**ClubheadDB** can be used to train models for applications like real-time coaching systems, performance analysis tools, or content recommendation engines for sports e-learning platforms. The included labels are ideal for training a classifier for Action Quality Assessment.
+The primary use case for **ClubheadDB** is to train a custom object detection model for the specific challenge of tracking a small, fast-moving golf clubhead. This is the foundational step for more advanced analysis. Once a model is trained on this data, its tracking output can be used to:
+
+1.  Reconstruct the club's swing path.
+2.  Analyze the swing plane for quality and consistency.
+3.  Develop an automated coaching system that provides real-time feedback.
 
 ## Citation
 
@@ -72,7 +79,7 @@ If you use ClubheadDB in your research, please cite our work:
 
 ```bibtex
 @inproceedings{hoefler2025clubheaddb,
-  title={{ClubheadDB: A Fine-Grained Dataset for Golf Swing Analysis}},
+  title={{ClubheadDB: A Bounding Box Dataset for Golf Clubhead Tracking}},
   author={Höfler, Sebastian and [Your Advisor's Name]},
   booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
   year={2025}
