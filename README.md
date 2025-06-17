@@ -9,7 +9,7 @@ A public dataset of 67 diverse, down-the-line golf swings with frame-by-frame bo
 -----
 
 
-![Alt Text](ClubheadDB/banner.gif)
+![Alt Text](banner.gif)
 -----
 
 ## Dataset Statistics
