@@ -8,12 +8,8 @@ A public dataset of 67 diverse, down-the-line golf swings with frame-by-frame bo
 
 -----
 
-\<p align="center"\>
-\<img src="ClubheadDB/banner.gif" alt="Example of clubhead tracking" width="600"/\>
-\<br\>
-\<em\>Example of the clubhead tracking possible by training a model on the ClubheadDB dataset.\</em\>
-\</p\>
 
+![Alt Text](CulbheadDB/banner.gif)
 -----
 
 ## Dataset Statistics
@@ -25,7 +21,7 @@ The dataset is designed to provide a diverse set of scenarios for robust model t
 | **Total Videos** | 67              | Video-level split: 44 Train, 10 Validation, 13 Test.                        |
 | **Total Annotated Frames** | 10,847          | A single bounding box annotation exists for each frame.                     |
 | **Video Sources** | YouTube (51%), Reddit (49%) | Sourced from public channels, providing a mix of camera qualities.          |
-| **Unique Golfers** | \~56             | Includes a mix of male and female golfers.                                  |
+| **Unique Golfers** | 67             | Includes a mix of male and female golfers.                                  |
 | **Skill Level Mix** | Pros (42%), Amateurs (58%) | Professional golfer swings are identified by name; amateur swings are anonymized. |
 | **Club Type Mix** | Irons (67%), Drivers (28%), Woods (5%) | Provides variation in clubhead shape and speed.                             |
 | **Frame Rate** | 15 or 30 FPS    | Videos are processed to a target FPS for consistency.                       |
