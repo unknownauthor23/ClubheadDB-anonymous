@@ -1,77 +1,50 @@
-# ClubheadDB: A Dataset for Down-the-Line Golf Clubhead Detection
+<p align="center">
+  <img src="assets/clubhead_db_banner.png" alt="ClubheadDB Banner"/>
+</p>
 
-![CVPR 2025 Workshop](https://img.shields.io/badge/Conference-CVPR%202025%20Workshop-blue) ![Dataset Size](https://img.shields.io/badge/Images-5000%2B-orange) ![Annotations](https://img.shields.io/badge/Annotations-Bounding%20Box-green) ![License](https://img.shields.io/badge/License-MIT-lightgrey)
+# ClubheadDB: A Golf Swing Video Dataset
 
-![Hero GIF of the app in action](assets/swing_demo.gif)
-*A demonstration of a real-time swing analysis using a model trained on ClubheadDB.*
+<div align="center">
 
----
+![Dataset Version](https://img.shields.io/badge/version-1.0-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Videos](https://img.shields.io/badge/videos-67+-lightgrey)
+![Sources](https://img.shields.io/badge/sources-YouTube_|_Reddit-red)
 
-This repository contains the **ClubheadDB** dataset, introduced in our paper:
+</div>
 
-> **[Your New Paper Title]** <br>
-> *[Your Name(s)]* <br>
-> *Proceedings of the CVPR 2025 Workshop on Sensing, Art, and Understanding of the Human Form in the Wild for Fine-Grained Analysis.*
+**ClubheadDB** is an open-source dataset designed for computer vision tasks in golf analytics. It provides metadata for over 67 high-quality video clips of golf swings, sourced from YouTube and Reddit, complete with frame-by-frame bounding box annotations for the golf clubhead.
 
-**[Link to your paper will go here once it's on arXiv or published]**
+This repository provides the necessary tools and metadata to download the source videos and reconstruct the full dataset on your local machine.
 
-## Motivation
+## 🌟 Dataset Highlights
 
-The analysis of high-speed human motion on mobile devices is a key challenge in computer vision. For sports like golf, providing fine-grained feedback on form requires robust tracking of small, fast-moving objects. We found that existing public datasets lack the high-quality, densely annotated data needed to train a reliable golf clubhead detector from the critical down-the-line (DTL) perspective. **ClubheadDB was created to fill this specific gap**, enabling researchers to develop and benchmark models for this challenging task.
+| Feature | Description |
+| :--- | :--- |
+| **Total Videos** | 67+ (and growing) |
+| **Total Frames** | ~5,000+ (after processing) |
+| **Classes** | `golf clubhead` |
+| **Sources** | YouTube, YouTube Shorts, Reddit |
+| **Annotations** | Frame-by-frame bounding boxes in YOLO format |
+| **Perspectives** | Down-the-line (DTL) and Face-on (FO) |
 
-## Dataset Overview
+## 🖼️ Visual Examples
 
-ClubheadDB is a collection of video frames designed to train and evaluate models for golf clubhead detection. The dataset was collected from 50 diverse videos sourced from public platforms like YouTube and Reddit.
+Here are a few examples of the annotated frames you can generate with this dataset.
 
-### Key Statistics
-* **Total Frames:** ~5,000
-* **Source Videos:** 50
-* **Perspective:** Down-the-Line (DTL)
-* **Annotations:** A single `clubhead` class, manually annotated with tight bounding boxes.
-* **Format:** YOLO TXT (`class_id x_center y_center width height`), normalized.
+| DTL View | Face-On View |
+| :---: | :---: |
+| <img src="assets/example_dtl.jpg" width="400"> | <img src="assets/example_fo.jpg" width="400"> |
 
-### Dataset Composition
+## 🚀 Getting Started
 
-![Data Distribution Charts](assets/distribution_charts.png)
-*(Left to right: Recording Mode, Sex, Club Type, Video Source)*
+Because the video clips are sourced from public platforms, this repository does not contain the video or image files directly. Follow these steps to download and build the dataset locally.
 
-### Sample Images
+### 1. Prerequisites
 
-![Grid of sample images](assets/sample_grid.png)
+You need Python, `yt-dlp`, and `ffmpeg` installed.
 
-### Annotation Quality
-
-We focused on creating tight, consistent bounding boxes to ensure high-quality labels for model training.
-
-![Annotation examples](assets/annotation_examples.png)
-
-## Download & Usage
-
-You can download the complete dataset as a single `.zip` file from the [Releases page](https://github.com/your-username/ClubheadDB-Golf-Swing-Dataset/releases).
-
-The dataset is structured for direct use with the Ultralytics YOLO framework but can be easily adapted for other platforms. The data is pre-split at the video level to prevent data leakage.
-
-* **Training Set:** 70%
-* **Validation Set:** 17%
-* **Test Set:** 13%
-
-## Citation
-
-If you use ClubheadDB in your research, we kindly ask that you cite our paper:
-
-```bibtex
-@inproceedings{hoefler2025clubheaddb,
-  title={[Your New Paper Title]},
-  author={[Your Name(s)]},
-  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops},
-  year={2025}
-}
-```
-
-## License
-
-This dataset is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For any questions, please contact [your name] at [your email].
+- **Python 3.8+**
+- **yt-dlp & ffmpeg**: The easiest way to install these on macOS or Linux is with [Homebrew](https://brew.sh):
+  ```bash
+  brew install yt-dlp ffmpeg
