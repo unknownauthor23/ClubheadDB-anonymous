@@ -9,7 +9,7 @@ A public dataset of 67 diverse, down-the-line golf swings with frame-by-frame bo
 -----
 
 \<p align="center"\>
-\<img src="[suspicious link removed]" alt="Example of clubhead tracking" width="600"/\>
+\<img src="ClubheadDB/banner.gif" alt="Example of clubhead tracking" width="600"/\>
 \<br\>
 \<em\>Example of the clubhead tracking possible by training a model on the ClubheadDB dataset.\</em\>
 \</p\>
