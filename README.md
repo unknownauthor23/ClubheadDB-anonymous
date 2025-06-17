@@ -22,11 +22,11 @@ This repository provides the necessary tools and metadata to download the source
 | Feature | Description |
 | :--- | :--- |
 | **Total Videos** | 67+ (and growing) |
-| **Total Frames** | ~5,000+ (after processing) |
-| **Classes** | `golf clubhead` |
+| **Total Frames** | ~10,800+ (after processing) |
+| **Classes** | `clubhead` |
 | **Sources** | YouTube, YouTube Shorts, Reddit |
 | **Annotations** | Frame-by-frame bounding boxes in YOLO format |
-| **Perspectives** | Down-the-line (DTL) and Face-on (FO) |
+| **Perspectives** | Down-the-line (DTL) |
 
 ## 🖼️ Visual Examples
 
@@ -48,3 +48,13 @@ You need Python, `yt-dlp`, and `ffmpeg` installed.
 - **yt-dlp & ffmpeg**: The easiest way to install these on macOS or Linux is with [Homebrew](https://brew.sh):
   ```bash
   brew install yt-dlp ffmpeg
+
+
+### 2. Clone the Repository
+
+git clone [https://github.com/sebastianhoefler/ClubheadDB.git](https://github.com/sebastianhoefler/ClubheadDB.git)
+cd ClubheadDB
+
+### 3. Install Python Dependencies
+
+pip install -r requirements.txt
