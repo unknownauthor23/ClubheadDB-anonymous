@@ -18,7 +18,7 @@ The dataset is designed to provide a diverse set of scenarios for robust model t
 
 | Feature               | Value           | Description                                                                 |
 | :-------------------- | :-------------- | :-------------------------------------------------------------------------- |
-| **Total Videos** | 67              | Video-level split: 44 Train, 10 Validation, 13 Test.                        |
+| **Total Videos** | 67              | Video-level split: 47 Train, 10 Validation, 10 Test.                        |
 | **Total Annotated Frames** | 10,847          | A single bounding box annotation exists for each frame.                     |
 | **Video Sources** | YouTube (51%), Reddit (49%) | Sourced from public channels, providing a mix of camera qualities.          |
 | **Unique Golfers** | 67             | Includes a mix of male and female golfers.                                  |
