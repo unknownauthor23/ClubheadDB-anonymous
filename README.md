@@ -1,6 +1,6 @@
 Here's the markdown text for your GitHub repository:
 
-# ClubheadDB: A Dataset for Golf Clubhead Tracking
+# ClubheadDB: A Video Database for Golf Clubhead Tracking
 
 A public dataset of 67 diverse, down-the-line golf swings with frame-by-frame bounding box annotations for training and evaluating clubhead trackers.
 
