@@ -18,10 +18,10 @@ The dataset is designed to provide a diverse set of scenarios for robust model t
 | :-------------------- | :-------------- | :-------------------------------------------------------------------------- |
 | **Total Videos** | 67              | Video-level split: 47 Train, 10 Validation, 10 Test.                        |
 | **Total Annotated Frames** | 10,847          | A single bounding box annotation exists for each frame.                     |
-| **Video Sources** | YouTube (51%), Reddit (49%) | Sourced from public channels, providing a mix of camera qualities.          |
+| **Video Sources** | YouTube (51%), Reddit (49%) | Videos sourced from publically available data on youtube and reddit          |
 | **Unique Golfers** | 67             | Includes a mix of male and female golfers.                                  |
 | **Skill Level Mix** | Pros (42%), Amateurs (58%) | Professional golfer swings are identified by name; amateur swings are anonymized. |
-| **Club Type Mix** | Irons (67%), Drivers (28%), Woods (5%) | Provides variation in clubhead shape and speed.                             |
+| **Club Type Mix** | Irons (67%), Drivers (28%), Woods (5%) | Includes different club types and swing speeds                         |
 | **Frame Rate** | 15 or 30 FPS    | Videos are processed to a target FPS for consistency.                       |
 | **Resolution** | $\\ge$ 720p       | All source videos are at least 720p to ensure annotation quality.           |
 
