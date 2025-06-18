@@ -52,7 +52,7 @@ To verify the quality of the dataset and establish a performance benchmark, we t
 
 | Model   | Precision | Recall | mAP@0.5 | mAP@.5:.95 |
 | :------ | :-------- | :----- | :------ | :-------- |
-| YOLOv8s | 0.94      | 0.83   | 0.87    | 0.53      |
+| YOLOv12s | 0.94      | 0.83   | 0.87    | 0.53      |
 
 This baseline provides a strong starting point for future research in trajectory analysis, swing plane reconstruction, and automated golf coaching systems.
 
