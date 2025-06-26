@@ -61,3 +61,52 @@ Run the `download` command. This will read the metadata, download all source vid
 
 By default, data is stored in a `.clubheaddb` folder in your home directory. You can see the location by running `clubheaddb locate`.
 
+3. Building the Dataset
+
+The dataset is built in a two-step process.
+
+Step A: Download and Extract
+
+Run the download command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.
+
+clubheaddb download
+
+By default, data is stored in a .clubheaddb folder in your home directory. You can see the location by running clubheaddb locate.
+
+Step B: Finalize the Dataset
+
+Run the finalize command. This script uses the master annotations.parquet file to remove any downloaded frames that were not part of the final, curated dataset. This ensures your local copy is an exact replica.
+
+clubheaddb finalize
+
+You now have the complete, clean ClubheadDB dataset ready for use!
+📁 Annotation Format
+
+The primary annotation format is a high-performance Parquet file (annotations.parquet) located inside the package data. This is the fastest way to load labels for model training.
+
+The file contains the following columns:
+
+    image_path: The relative path to the image (e.g., frames/swing_001/images/frame_0001.jpg).
+
+    class_id: The integer ID for the class (always 0 for golf clubhead).
+
+    x_center, y_center, width, height: The normalized bounding box coordinates (YOLO format).
+
+🤝 Contributing
+
+Contributions are welcome! If you would like to add more videos to the dataset, please fork the repository, update metadata.csv, and submit a pull request with your proposed changes.
+📜 License
+
+This dataset is released under the MIT License. Please be aware of the Terms of Service of the original video sources (YouTube, Reddit).
+✍️ Citation
+
+If you use ClubheadDB in your research, please cite our work:
+
+@inproceedings{hoefler2025clubheaddb,
+  title={{ClubheadDB: A Bounding Box Dataset for Golf Clubhead Tracking}},
+  author={Höfler, Sebastian and [Your Advisor's Name]},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+  year={2025}
+}
+
+
