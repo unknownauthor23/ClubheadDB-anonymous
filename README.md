@@ -49,3 +49,14 @@ pip install git+[https://github.com/sebastianhoefler/ClubheadDB.git](https://git
 
 # Once published on PyPI, it will be:
 # pip install clubheaddb
+
+This command also automatically installs dependencies like Run the download command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.yt-dlp`, `pandas`, etc.
+
+### 3. Building the Dataset
+
+The dataset is built in a two-step process.
+
+Run the `download` command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.
+
+By default, data is stored in a `.clubheaddb` folder in your home directory. You can see the location by running `clubheaddb locate`.
+
