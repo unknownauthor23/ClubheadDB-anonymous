@@ -51,7 +51,7 @@ pip install git+[https://github.com/sebastianhoefler/ClubheadDB.git](https://git
 # pip install clubheaddb
 ```
 
-This command also automatically installs dependencies like Run the download command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.yt-dlp`, `pandas`, etc.
+This command also automatically installs dependencies like Run the download command. `yt-dlp`, `pandas`, etc.
 
 ### 3. Building the Dataset
 
