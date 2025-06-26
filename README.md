@@ -10,7 +10,7 @@
 ![PyPI Version](https://img.shields.io/pypi/v/clubheaddb)
 ![License](https://img.shields.io/pypi/l/clubheaddb)
 ![Python Versions](https://img.shields.io/pypi/pyversions/clubheaddb)
-![Dataset Size](https://img.shields.io/badge/videos-67+-blue)
+![Dataset Size](https://img.shields.io/badge/Frames-10.000+-blue)
 ![Sources](https://img.shields.io/badge/sources-YouTube_|_Reddit-red)
 
 </div>
