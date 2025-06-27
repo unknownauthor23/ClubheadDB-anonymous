@@ -70,7 +70,7 @@ First, clone this repository to your local machine:
 
 ```plaintext
 git clone [https://github.com/sebastianhoefler/ClubheadDB.git](https://github.com/sebastianhoefler/ClubheadDB.git) 
-cd clubhead-db-repo
+cd ClubheadDB
 ```
 
 ### Step 2: Install the Package
