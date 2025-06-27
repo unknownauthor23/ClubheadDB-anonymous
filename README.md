@@ -37,76 +37,74 @@ The core philosophy is to provide the **metadata** and **final annotations**, al
 
 The entire process is managed by the `clubheaddb` command-line tool.
 
-### 1. Prerequisites
-- Python 3.8+
-- [FFmpeg](https://ffmpeg.org/download.html) (must be installed and available in your system's PATH)
+## Final Data Structure
 
-### 2. Installation
-Once published, you will be able to install `ClubheadDB` directly from PyPI using pip:
-```bash
-# For now, you can install it directly from your GitHub repository
-pip install git+[https://github.com/sebastianhoefler/ClubheadDB.git](https://github.com/sebastianhoefler/ClubheadDB.git)
+After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.```
+```plaintext
+frames/
+└── swing_001/
+    ├── images/
+    │   ├── frame_0001.jpg
+    │   ├── frame_0002.jpg
+    │   └── ...
+    └── labels/
+        ├── frame_0001.txt
+        ├── frame_0002.txt
+        └── ...
+```
+Each `.txt` file contains the bounding box annotations for the corresponding image in YOLO format. Images with no clubhead present will have an empty `.txt` file.
 
-# Once published on PyPI, it will be:
-# pip install clubheaddb
+## Prerequisites
+
+Before you begin, you must have the following command-line tools installed and available in your system's `PATH`:
+-   **Python** (3.8 or higher)
+-   **yt-dlp**: For downloading video clips from YouTube and Reddit. ([Installation Guide](https://github.com/yt-dlp/yt-dlp#installation))
+-   **ffmpeg**: For extracting frames from videos. ([Installation Guide](https://ffmpeg.org/download.html))
+
+## Setup and Usage
+
+Follow these steps to build the dataset on your local machine.
+
+### Step 1: Clone the Repository
+First, clone this repository to your local machine:
+
+```plaintext
+git clone [https://github.com/sebastianhoefler/ClubheadDB.git](https://github.com/sebastianhoefler/ClubheadDB.git) 
+cd clubhead-db-repo
 ```
 
-This command also automatically installs dependencies like `yt-dlp`, `pandas`, etc.
+### Step 2: Install the Package
+This repository is configured as an installable Python package. Run the following command in the root directory of the repository. This will automatically install all required Python libraries (like pandas and tqdm) and make the build script available as a command-line tool.
 
-### 3. Building the Dataset
+```plaintext
+pip install .
+```
 
-The dataset is built in a two-step process.
+### Step 3: Run the Build Command
 
-Run the `download` command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.
+Now, you can build the entire dataset by running a single command in your terminal:
+```plaintext
+clubhead-build
+```
+This command will execute the full pipeline:
 
-By default, data is stored in a `.clubheaddb` folder in your home directory. You can see the location by running `clubheaddb locate`.
+1.  It reads `metadata/metadata.csv` to find the video clips.
+2.  It downloads the clips into a local `videos/` directory.
+3.  It extracts frames from the videos into the `frames/swing_xxx/images/` structure.
+4.  It reads `annotations/annotations.parquet` and creates the corresponding `.txt` label files in the `frames/swing_xxx/labels/` structure.
 
-3. Building the Dataset
+The process may take a significant amount of time depending on your internet connection and the number of videos.
 
-The dataset is built in a two-step process.
+## Citation
 
-Step A: Download and Extract
+If you use ClubheadDB or the tools in this repository in your research, please cite our paper:
 
-Run the download command. This will read the metadata, download all source videos, and extract the raw frames. This is the longest step.
-
-clubheaddb download
-
-By default, data is stored in a .clubheaddb folder in your home directory. You can see the location by running clubheaddb locate.
-
-Step B: Finalize the Dataset
-
-Run the finalize command. This script uses the master annotations.parquet file to remove any downloaded frames that were not part of the final, curated dataset. This ensures your local copy is an exact replica.
-
-clubheaddb finalize
-
-You now have the complete, clean ClubheadDB dataset ready for use!
-📁 Annotation Format
-
-The primary annotation format is a high-performance Parquet file (annotations.parquet) located inside the package data. This is the fastest way to load labels for model training.
-
-The file contains the following columns:
-
-    image_path: The relative path to the image (e.g., frames/swing_001/images/frame_0001.jpg).
-
-    class_id: The integer ID for the class (always 0 for golf clubhead).
-
-    x_center, y_center, width, height: The normalized bounding box coordinates (YOLO format).
-
-🤝 Contributing
-
-Contributions are welcome! If you would like to add more videos to the dataset, please fork the repository, update metadata.csv, and submit a pull request with your proposed changes.
-📜 License
-
-This dataset is released under the MIT License. Please be aware of the Terms of Service of the original video sources (YouTube, Reddit).
-✍️ Citation
-
-If you use ClubheadDB in your research, please cite our work:
-
-@inproceedings{hoefler2025clubheaddb,
-  title={{ClubheadDB: A Bounding Box Dataset for Golf Clubhead Tracking}},
-  author={Höfler, Sebastian and [Your Advisor's Name]},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+```plaintext 
+@inproceedings{yourname2025clubheaddb,
+  title={Your Paper Title Here},
+  author={Your, Name and Coauthor, Name},
+  booktitle={ICCV Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation},
   year={2025}
 }
-
+```
 
