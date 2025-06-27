@@ -37,7 +37,7 @@ The core philosophy is to provide the **metadata** and **final annotations**, al
 
 The entire process is managed by the `clubheaddb` command-line tool.
 
-## Final Data Structure
+### Final Data Structure
 
 After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.```
 ```plaintext
@@ -54,18 +54,18 @@ frames/
 ```
 Each `.txt` file contains the bounding box annotations for the corresponding image in YOLO format. Images with no clubhead present will have an empty `.txt` file.
 
-## Prerequisites
+### Prerequisites
 
 Before you begin, you must have the following command-line tools installed and available in your system's `PATH`:
 -   **Python** (3.8 or higher)
 -   **yt-dlp**: For downloading video clips from YouTube and Reddit. ([Installation Guide](https://github.com/yt-dlp/yt-dlp#installation))
 -   **ffmpeg**: For extracting frames from videos. ([Installation Guide](https://ffmpeg.org/download.html))
 
-## Setup and Usage
+### Setup and Usage
 
 Follow these steps to build the dataset on your local machine.
 
-### Step 1: Clone the Repository
+#### Step 1: Clone the Repository
 First, clone this repository to your local machine:
 
 ```plaintext
@@ -73,14 +73,14 @@ git clone [https://github.com/sebastianhoefler/ClubheadDB.git](https://github.co
 cd ClubheadDB
 ```
 
-### Step 2: Install the Package
+#### Step 2: Install the Package
 This repository is configured as an installable Python package. Run the following command in the root directory of the repository. This will automatically install all required Python libraries (like pandas and tqdm) and make the build script available as a command-line tool.
 
 ```plaintext
 pip install .
 ```
 
-### Step 3: Run the Build Command
+#### Step 3: Run the Build Command
 
 Now, you can build the entire dataset by running a single command in your terminal:
 ```plaintext
@@ -95,7 +95,7 @@ This command will execute the full pipeline:
 
 The process may take a significant amount of time depending on your internet connection and the number of videos.
 
-## Citation
+### Citation
 
 If you use ClubheadDB or the tools in this repository in your research, please cite our paper:
 
