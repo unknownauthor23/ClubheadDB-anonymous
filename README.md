@@ -51,7 +51,7 @@ pip install git+[https://github.com/sebastianhoefler/ClubheadDB.git](https://git
 # pip install clubheaddb
 ```
 
-This command also automatically installs dependencies like Run the download command. `yt-dlp`, `pandas`, etc.
+This command also automatically installs dependencies like `yt-dlp`, `pandas`, etc.
 
 ### 3. Building the Dataset
 
