@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clubhead-db"
+version = "1.0.0"
+description = "Scripts to download and process the ClubheadDB dataset for golf swing analysis."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT License" }
+authors = [
+    { name = "Your Name", email = "your.email@example.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+# List all your Python package dependencies here
+dependencies = [
+    "pandas",
+    "pyarrow",
+    "tqdm",
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/clubhead-db-repo" # Change this to your repo URL
+
+# This section makes your scripts available as command-line tools
+# after a user runs `pip install .`
+[project.scripts]
+clubhead-download = "download_and_process:main"
+clubhead-merge-labels = "merge_labels:main"
+clubhead-create-yolo = "create_dataset:main"
