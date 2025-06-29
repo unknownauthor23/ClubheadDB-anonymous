@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://storage.googleapis.com/gemini-prod/images/5f58359b-137a-4255-b072-46654e9e0325" alt="ClubheadDB Banner" width="80%"/>
+  <img     ClubheadDB/banner.gif" alt="ClubheadDB Banner" width="80%"/>
 </p>
 
 # ClubheadDB: A Video Dataset for Golf Clubhead Tracking
