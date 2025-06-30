@@ -28,23 +28,6 @@
 
 The entire process is managed by the `clubhead-build` command-line tool.
 
-### Final Data Structure
-
-After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.
-```plaintext
-frames/
-└── swing_001/
-    ├── images/
-    │   ├── frame_0001.jpg
-    │   ├── frame_0002.jpg
-    │   └── ...
-    └── labels/
-        ├── frame_0001.txt
-        ├── frame_0002.txt
-        └── ...
-```
-Each `.txt` file contains the bounding box annotations for the corresponding image in YOLO format. Images with no clubhead present will have an empty `.txt` file.
-
 ### Prerequisites
 
 Before you begin, you must have the following command-line tools installed and available in your system's `PATH`:
@@ -52,12 +35,11 @@ Before you begin, you must have the following command-line tools installed and a
 -   **yt-dlp**: For downloading video clips from YouTube and Reddit. ([Installation Guide](https://github.com/yt-dlp/yt-dlp#installation))
 -   **ffmpeg**: For extracting frames from videos. ([Installation Guide](https://ffmpeg.org/download.html))
 
-### Setup and Usage
+### Installation and Usage
 
-Follow these steps to build the dataset on your local machine.
+#### Step 1: Install the Package
 
-#### Step 1: Clone the Repository
-First, clone this repository to your local machine:
+The easiest way to get the tools is to install the package directly from PyPI:
 
 ```plaintext
 git clone [https://github.com/unknownauthor23/ClubheadDB.git](https://github.com/unknownauthor23/ClubheadDB.git) 
@@ -85,6 +67,23 @@ This command will execute the full pipeline:
 4.  It reads `annotations/annotations.parquet` and creates the corresponding `.txt` label files in the `frames/swing_xxx/labels/` structure.
 
 The process may take a significant amount of time depending on your internet connection and the number of videos.
+
+### Final Data Structure
+
+After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.
+```plaintext
+frames/
+└── swing_001/
+    ├── images/
+    │   ├── frame_0001.jpg
+    │   ├── frame_0002.jpg
+    │   └── ...
+    └── labels/
+        ├── frame_0001.txt
+        ├── frame_0002.txt
+        └── ...
+```
+Each `.txt` file contains the bounding box annotations for the corresponding image in YOLO format. Images with no clubhead present will have an empty `.txt` file.
 
 ### Citation
 
