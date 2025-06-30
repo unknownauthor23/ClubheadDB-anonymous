@@ -94,8 +94,8 @@ If you use ClubheadDB or the tools in this repository in your research, please c
 
 ```plaintext 
 @inproceedings{yourname2025clubheaddb,
-  title={Your Paper Title Here},
-  author={Your, Name and Coauthor, Name},
+  title={ClubheadDB placeholder},
+  author={anonymous},
   booktitle={ICCV Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation},
   year={2025}
 }
