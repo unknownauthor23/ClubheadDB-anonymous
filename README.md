@@ -45,14 +45,7 @@ The easiest way to get the dataset is to install the package directly from PyPI:
 pip install clubhead-db
 ```
 
-#### Step 2: Install the Package
-This repository is configured as an installable Python package. Run the following command in the root directory of the repository. This will automatically install all required Python libraries (like pandas and tqdm) and make the build script available as a command-line tool.
-
-```plaintext
-pip install .
-```
-
-#### Step 3: Run the Build Command
+#### Step 2: Run the Build Command
 
 Now, you can build the entire dataset by running a single command in your terminal:
 ```plaintext
