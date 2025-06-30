@@ -1,13 +1,12 @@
 # ClubheadDB: A Video Dataset for Golf Clubhead Tracking
 
 <div align="center">
-
-<!-- These badges will work once you publish to PyPI -->
-![PyPI Version](https://img.shields.io/pypi/v/clubheaddb)
-![License](https://img.shields.io/pypi/l/clubheaddb)
-![Python Versions](https://img.shields.io/pypi/pyversions/clubheaddb)
-![Dataset Size](https://img.shields.io/badge/Frames-10.000+-blue)
-![Sources](https://img.shields.io/badge/sources-YouTube_|_Reddit-red)
+    
+![GitHub Repo stars](https://img.shields.io/github/stars/unknownauthor23/ClubheadDB?style=social)
+![License](https://img.shields.io/github/license/unknownauthor23/ClubheadDB)
+![Last Commit](https://img.shields.io/github/last-commit/unknownauthor23/ClubheadDB)
+![Dataset Size](https://img.shields.io/badge/Frames-10%2C000%2B-blue)
+![Sources](https://img.shields.io/badge/Sources-YouTube_%7C_Reddit-red)
 
 </div>
 
