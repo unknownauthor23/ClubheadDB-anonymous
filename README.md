@@ -41,7 +41,7 @@ Before you begin, you must have the following command-line tools installed and a
 
 The easiest way to get the dataset is to install the package directly from PyPI:
 
-``````bash
+```bash
 pip install clubhead-db
 ```
 
