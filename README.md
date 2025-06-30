@@ -8,7 +8,7 @@
 ![Dataset Size](https://img.shields.io/badge/Frames-10.000+-blue)
 ![Sources](https://img.shields.io/badge/sources-YouTube_%7C_Reddit-red)
 
-The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License]([https://img.shields.io/badge/Frames-10.000+-blue](https://creativecommons.org/licenses/by-nc/4.0/)).
+The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 **ClubheadDB** is a web-sourced dataset for computer vision research in golf swing analysis, with a focus on clubhead detection. It contains over 10,000 “down-the-line” frames from public golf swing videos, each hand-annotated with precise clubhead locations. The dataset is fully reproducible: we provide the metadata (video URLs, timestamps) and final annotations, along with scripts to download and extract the exact set of frames used in our study.
 
