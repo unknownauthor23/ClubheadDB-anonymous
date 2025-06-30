@@ -15,9 +15,7 @@
 
 </div>
 
-**ClubheadDB** is an open-source dataset and Python package for computer vision in golf analytics. It provides the metadata and tools to build a curated dataset of over 10,000 annotated frames from diverse, public-domain golf swing videos.
-
-The core philosophy is to provide the **metadata** and **final annotations**, allowing users to download the source video clips directly and reproduce the exact dataset used for our research.
+**ClubheadDB** is a web-sourced dataset for computer vision research in golf swing analysis, with a focus on clubhead detection. It contains over 10,000 “down-the-line” frames from public golf swing videos, each hand-annotated with precise clubhead locations. The dataset is fully reproducible: we provide the metadata (video URLs, timestamps) and final annotations, along with scripts to download and extract the exact set of frames used in our study.
 
 -----
 
