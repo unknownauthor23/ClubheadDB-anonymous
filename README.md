@@ -41,9 +41,8 @@ Before you begin, you must have the following command-line tools installed and a
 
 The easiest way to get the dataset is to install the package directly from PyPI:
 
-```plaintext
-git clone [https://github.com/unknownauthor23/ClubheadDB.git](https://github.com/unknownauthor23/ClubheadDB.git) 
-cd ClubheadDB
+``````bash
+pip install clubhead-db
 ```
 
 #### Step 2: Install the Package
