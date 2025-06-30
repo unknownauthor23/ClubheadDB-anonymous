@@ -1,14 +1,12 @@
-# ClubheadDB: A Video Dataset for Golf Clubhead Tracking
-
 <div align="center">
-<!-- These badges will work once you publish to PyPI -->
+# ClubheadDB: A Video Dataset for Golf Clubhead Tracking
+</div>
+
 ![PyPI Version](https://img.shields.io/pypi/v/clubheaddb)
 ![License](https://img.shields.io/pypi/l/clubheaddb)
 ![Python Versions](https://img.shields.io/pypi/pyversions/clubheaddb)
 ![Dataset Size](https://img.shields.io/badge/Frames-10.000+-blue)
-![Sources](https://img.shields.io/badge/sources-YouTube_|_Reddit-red)
-
-</div>
+![Sources](https://img.shields.io/badge/sources-YouTube_%7C_Reddit-red)
 
 **ClubheadDB** is a web-sourced dataset for computer vision research in golf swing analysis, with a focus on clubhead detection. It contains over 10,000 “down-the-line” frames from public golf swing videos, each hand-annotated with precise clubhead locations. The dataset is fully reproducible: we provide the metadata (video URLs, timestamps) and final annotations, along with scripts to download and extract the exact set of frames used in our study.
 
