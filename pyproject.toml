@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT License" }
 authors = [
-    { name = "Your Name", email = "sebastian.u.hoefler@gmail.com" },
+    { name = "Your Name", email = "algorithmartist02@gmail.com" },
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -24,7 +24,7 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/sebastianhoefler/ClubheadDB" # Change this to your repo URL
+Homepage = "https://github.com/unknownauthor23/ClubheadDB" # Change this to your repo URL
 
 # This section makes your main build script available as a single command.
 [project.scripts]
