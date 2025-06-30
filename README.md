@@ -37,7 +37,7 @@ The entire process is managed by the `clubheaddb` command-line tool.
 
 ### Final Data Structure
 
-After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.```
+After running the pipeline, you will have a `frames/` directory organized as follows. This structure is designed to be easy to parse, view, and use for further processing.
 ```plaintext
 frames/
 └── swing_001/
