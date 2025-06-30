@@ -39,7 +39,7 @@ Before you begin, you must have the following command-line tools installed and a
 
 #### Step 1: Install the Package
 
-The easiest way to get the tools is to install the package directly from PyPI:
+The easiest way to get the dataset is to install the package directly from PyPI:
 
 ```plaintext
 git clone [https://github.com/unknownauthor23/ClubheadDB.git](https://github.com/unknownauthor23/ClubheadDB.git) 
