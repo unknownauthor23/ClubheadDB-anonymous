@@ -1,5 +1,5 @@
 <div align="center">
-# ClubheadDB: A Video Dataset for Golf Clubhead Tracking
+<h1>ClubheadDB: A Video Dataset for Golf Clubhead Tracking<h1>
 </div>
 
 ![PyPI Version](https://img.shields.io/pypi/v/clubheaddb)
