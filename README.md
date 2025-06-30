@@ -81,12 +81,12 @@ Each `.txt` file contains the bounding box annotations for the corresponding ima
 
 If you use ClubheadDB or the tools in this repository in your research, please cite our paper:
 
+(Placeholder until paper gets accepted or rejected:)
 ```plaintext 
-@inproceedings{yourname2025clubheaddb,
-  title={ClubheadDB placeholder},
-  author={anonymous},
-  booktitle={ICCV Workshop on AI-driven Skilled Activity Understanding, Assessment & Feedback Generation},
-  year={2025}
+@inproceedings{unknownauthor23_2025clubheaddb,
+  title={ClubheadDB: A Video Dataset for Golf Clubhead Tracking},
+  author={unknownauthor23},
+  booktitle={Workshop}
 }
 ```
 
