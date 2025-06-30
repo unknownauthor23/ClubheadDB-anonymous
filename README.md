@@ -1,5 +1,5 @@
 <p align="center">
-  <img     ClubheadDB/banner.gif" alt="ClubheadDB Banner" width="80%"/>
+  <img src="ClubheadDB/banner.gif" alt="ClubheadDB Banner" width="80%">
 </p>
 
 # ClubheadDB: A Video Dataset for Golf Clubhead Tracking
