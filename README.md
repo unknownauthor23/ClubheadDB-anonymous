@@ -67,7 +67,7 @@ Follow these steps to build the dataset on your local machine.
 First, clone this repository to your local machine:
 
 ```plaintext
-git clone [https://github.com/sebastianhoefler/ClubheadDB.git](https://github.com/sebastianhoefler/ClubheadDB.git) 
+git clone [https://github.com/unknownauthor23/ClubheadDB.git](https://github.com/unknownauthor23/ClubheadDB.git) 
 cd ClubheadDB
 ```
 
