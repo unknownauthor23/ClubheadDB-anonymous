@@ -1,5 +1,3 @@
-![ClubheadDB Banner](ClubheadDB/banner.gif)
-
 # ClubheadDB: A Video Dataset for Golf Clubhead Tracking
 
 <div align="center">
