@@ -18,7 +18,7 @@
 | :--------------------- | :------------------------- | :----------------------------------------------------------------------- |
 | **Unique Golfers** | 67+                        | Video-level split: 47 Train, 10 Validation, 10 Test.                     |
 | **Total Annotated Frames** | 10,180                     | A single bounding box annotation exists for each frame (zero for null examples).          |
-| **Video Sources** | YouTube (51%), Reddit (49%) | Sourced from public posts to ensure a wide variety of conditions.        |
+| **Video Sources** | YouTube (46%), Reddit (54%) | Sourced from public posts to ensure a wide variety of conditions.        |
 | **Skill Level Mix** | Pros (42%), Amateurs (58%) | Includes a mix of professional and amateur golfers.                      |
 | **Club Type Mix** | Irons (70%), Drivers (27%) and Woods (3%) | A diverse set of clubs to ensure model generalization.                   |
 
