@@ -1,14 +1,12 @@
-<div align="center">
+div align="center">
 <h1>ClubheadDB: A Video Dataset for Golf Clubhead Tracking<h1>
 </div>
 
-![PyPI Version](https://img.shields.io/pypi/v/clubheaddb)
+![PyPI Version](https://img.shields.io/pypi/v/clubhead-db)
 ![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC_BY--NC_4.0-lightgrey.svg)
-![Python Versions](https://img.shields.io/pypi/pyversions/clubheaddb)
-![Dataset Size](https://img.shields.io/badge/Frames-10.000+-blue)
+![Python Versions](https://img.shields.io/pypi/pyversions/clubhead-db)
+![Dataset Size](https://img.shields.io/badge/Frames-10,000+-blue)
 ![Sources](https://img.shields.io/badge/sources-YouTube_%7C_Reddit-red)
-
-The code in this repository is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International License](https://creativecommons.org/licenses/by-nc/4.0/)
 
 **ClubheadDB** is a web-sourced dataset for computer vision research in golf swing analysis, with a focus on clubhead detection. It contains over 10,000 “down-the-line” frames from public golf swing videos, each hand-annotated with precise clubhead locations. The dataset is fully reproducible: we provide the metadata (video URLs, timestamps) and final annotations, along with scripts to download and extract the exact set of frames used in our study.
 
@@ -28,7 +26,7 @@ The code in this repository is licensed under a [Creative Commons Attribution-No
 
 ## 🚀 Getting the Data
 
-The entire process is managed by the `clubheaddb` command-line tool.
+The entire process is managed by the `clubhead-build` command-line tool.
 
 ### Final Data Structure
 
