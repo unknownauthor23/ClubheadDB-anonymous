@@ -56,7 +56,7 @@ This command will execute the full pipeline:
 1.  It reads `metadata/metadata.csv` to find the video clips.
 2.  It downloads the clips into a local `videos/` directory.
 3.  It extracts frames from the videos into the `frames/swing_xxx/images/` structure.
-4.  It reads `annotations/annotations.parquet` and creates the corresponding `.txt` label files in the `frames/swing_xxx/labels/` structure.
+4.  It reads `annotations.parquet` and creates the corresponding `.txt` label files in the `frames/swing_xxx/labels/` structure.
 
 The process may take a significant amount of time depending on your internet connection and the number of videos.
 
